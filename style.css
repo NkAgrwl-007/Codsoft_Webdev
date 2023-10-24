@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #17bfe9;
+    margin: 0;
+}
+
+.calculator-container {
+    border: 5px solid #00f;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    background-color: #000;
+}
+
+.calculator {
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 300px;
+    width: 100%;
+}
+
+.display {
+    width: calc(100% - 10px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5em;
+    text-align: right;
+    background-color: #333;
+    color: #fff;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+label {
+    padding: 15px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #3498db;
+    color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.noen-red:hover {
+    background-color: #c0392b;
+}
+
+label:hover {
+    background-color: #1c6de8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label.neon {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00, #ffff00);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+.neon-blue {
+    background-color: #e74c3c;
+    background: linear-gradient(45deg, #0077ff, #00d4ff, #00ffcc, #00ff33);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+.neon-red {
+    background: linear-gradient(45deg, #ff0012, #ff5050, #ff7a7a, #ff9999);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+.neon-green {
+    background: linear-gradient(45deg, #15c90e, #33ff33, #66ff66, #99ff99);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+.neon-yellow {
+    background: linear-gradient(45deg, #ffff00, #ffff33, #ffff66, #ffff99);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+.neon-brown {
+    background: linear-gradient(45deg, #db5e0a, #e77408, #e96e09d5, #ec770aef);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+.neon-skyblue {
+    background: linear-gradient(45deg, #06d3e2, #09e4c7, #0b9fcc, #07a0bb);
+    background-size: 200% 200%;
+    animation: glowing 2s linear infinite;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 200% 200%;
+    }
+}

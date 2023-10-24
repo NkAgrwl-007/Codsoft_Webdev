@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <input id="display" class="display" type="text" readonly>
+            <div class="buttons">
+                <input type="radio" name="operator" id="on" checked><label class="neon-brown" for="on">ON</label>
+                <input type="radio" name="operator" id="off"><label class="neon-red" for="off">OFF</label>
+                <input type="radio" name="number" id="clear"><label class="neon-green" for="clear">C</label>
+                <input type="radio" name="number" id="delete"><label class="neon-yellow" for="delete">DEL</label>
+                <input type="radio" name="number" id="seven"><label class="neon" for="seven">7</label>
+                <input type="radio" name="number" id="eight"><label class="neon" for="eight">8</label>
+                <input type="radio" name="number" id="nine"><label class="neon" for="nine">9</label>
+                <input type="radio" name="operator" id="divide"><label class="neon-skyblue" for="divide">/</label>
+                <input type="radio" name="number" id="four"><label class="neon" for="four">4</label>
+                <input type="radio" name="number" id="five"><label class="neon" for="five">5</label>
+                <input type="radio" name="number" id="six"><label class="neon" for="six">6</label>
+                <input type="radio" name="operator" id="multiply"><label class="neon-skyblue" for="multiply">*</label>
+                <input type="radio" name="number" id="one"><label class="neon" for="one">1</label>
+                <input type="radio" name="number" id="two"><label class="neon" for="two">2</label>
+                <input type="radio" name="number" id="three"><label class="neon" for="three">3</label>
+                <input type="radio" name="operator" id="subtract"><label class="neon-skyblue" for="subtract">-</label>
+                <input type="radio" name="number" id="decimal"><label class="neon-skyblue" for="decimal">.</label>
+                <input type="radio" name="number" id="zero"><label class="neon" for="zero">0</label>
+                <input type="radio" name="operator" id="add"><label class="neon-skyblue" for="add">+</label>
+                <input type="radio" name="operator" id="equals"><label class="neon" for="equals">=</label>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
