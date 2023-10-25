@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #ffff00, #46e738, #ffff66, #28bb0b);
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #00ff00, #ffff00);
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(197, 5, 5, 0.1);
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+.animated-heading {
+    animation: neon 2s infinite alternate;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.animated-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #22bbb3, #ffff33, #179a9e, #ffff99);
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background 10s;
+}
+
+.animated-button:hover {
+    filter: brightness(1.2);
+}
+
+.task-box {
+    display: none;
+    background: linear-gradient(45deg, #ff0066, #ff99cc, #ff00ff, #cc66ff);
+    animation: backgroundAnimation 4s infinite alternate;
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.task-box:hover {
+    transform: scale(1.05);
+}
+
+.task-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #1bd5db;
+}
+
+#taskInput {
+    padding: 10px;
+    width: calc(100% - 20px);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+
+#addTask {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #22bbb3, #ffff33, #179a9e, #ffff99);
+    color: #12b4dd;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#addTask:hover {
+    filter: brightness(1.2);
+}
+
+
+#completedTasksContainer,
+#taskListContainer {
+    flex-basis: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 30px rgba(255, 255, 255, 0.8);
+    }
+    to {
+        text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8), 0 0 40px rgba(255, 255, 255, 1);
+    }
+}
+
+@keyframes backgroundAnimation {
+    from {
+        background: rgba(255, 255, 255, 0.3);
+    }
+    to {
+        background: rgba(255, 255, 255, 0.5);
+    }
+}
